@@ -1,0 +1,17 @@
+[package]
+name = "hd-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "HTTP Downloader (Rust) command-line frontend"
+
+[[bin]]
+name = "hd"
+path = "src/main.rs"
+
+[dependencies]
+hd-core = { path = "../hd-core" }
+tokio = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

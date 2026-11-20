@@ -1,0 +1,17 @@
+[package]
+name = "hd-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "egui GUI for the hd-core download engine (Rust rewrite of erickutcher/httpdownloader)"
+
+[dependencies]
+hd-core = { path = "../hd-core" }
+eframe = { workspace = true }
+arboard = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[package.metadata.notes]
+scope = "M4: list/add/settings/dark-mode/clipboard monitor"
